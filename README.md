@@ -1,6 +1,6 @@
-# Video-Caption-Generator
+# Video-Captioning
 
-Video Caption Generator is an encoder decoder mode based on sequence to sequence learning.
+Video Captioning is an encoder decoder mode based on sequence to sequence learning.
 It takes a video as input and generates a caption describing the event in the video. 
 
 The importance of captioning lies in its ability to make video more accessible in numerous ways. 
@@ -29,7 +29,7 @@ I hope this project makes it easier for people to implement video captioning.
 
 ## Sample Results
 Here is a clip of realtime prediction on the testing data.
-<p align = "center"><img align = "center" src = "images/predict_realtime.gif" >/></p>
+<p align = "center"><img align = "center" src = "images/predict_realtime.gif" /></p>
 
 ## Dataset
 This project is build on the [MSVD](https://drive.google.com/file/d/0B18IKlS3niGFNlBoaHJTY3NXUkE/view) dataset. 
@@ -94,7 +94,7 @@ To get more information check on these search algorithms check out this [post](h
 |<img src="images/qeKX-N1nKiM_0_5.gif" height="320px"/>|a woman is seasoning some food(22.05s)|a woman is seasoning some food(0.70s)|
 |<img src="images/7NNg0_n-bS8_21_30.gif" width="320px"/>|a man is singing (13.79s) |a man is performing on a stage(0.77s)|
 |<img src="images/shPymuahrsc_5_12.gif" width="320px"/>|the animal is sitting on the ground (21.16)|a person is playing(0.67s)|
-|<img src="images/k5OKBX2e7xA_19_32.gif" width="320px"/>|a man is riding a bicycle (22.20) |,a man is riding a bicycle(0.66)|
+|<img src="images/k5OKBX2e7xA_19_32.gif" width="320px"/>|a man is riding a bicycle (22.20) |a man is riding a bicycle(0.66)|
 |<img src="images/Je3V7U5Ctj4_569_576.gif" width="320px"/>|a man is spreading a tortilla (25.65) |a man is spreading a tortilla (0.75)
 |<img src="images/0lh_UWF9ZP4_62_69.gif" width="320px"/>|a woman is mixing some food (35.91) |a woman is mixing some food(0.72)|
 |<img src="images/5HAf_INrFy0_3_25.gif" width="320px"/>|a dog is dancing (15.58) |a dog is making a dance(0.68)
