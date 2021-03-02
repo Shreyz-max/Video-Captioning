@@ -86,7 +86,7 @@ This is the graph of epochs vs metric. The metric used is accuracy.
  
 Greedy search selects the most likely word at each step in the output sequence.
 Beam search algorithm selects multiple alternatives for an input sequence at each timestep based on conditional probability.
-To get more information check on these search algorithms check out this [post](https://machinelearningmastery.com/beam-search-decoder-natural-language-processing/) 
+To get more information on these search algorithms check out this [post](https://machinelearningmastery.com/beam-search-decoder-natural-language-processing/) 
 
 ### Performance of both algorithms on testing data
 |Video|Beam Text(Time taken)|Greedy Text(Time taken)|
