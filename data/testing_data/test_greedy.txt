@@ -1,0 +1,100 @@
+ScdUht-pM6s_53_63,a woman is mixing something,1.55
+wkgGxsuNVSg_34_41,a man is playing with a large,0.81
+BtQtRGI0F2Q_15_20,a person is doing a wall,0.70
+k06Ge9ANKM8_5_16,a baby is playing up a,0.69
+sZf3VDsdDPM_107_114,a man is talking,0.69
+shPymuahrsc_5_12,a person is playing on a,0.67
+XOAgUVVwKEA_8_20,a baby is drinking her baby,0.66
+ufFT2BWh3BQ_0_8,a panda is climbing,0.67
+5YJaS2Eswg0_22_26,a man is doing a gun,0.67
+lw7pTwpx0K0_38_48,a man is pouring a on a pan,0.66
+UbmZAe5u5FI_132_141,a person is slicing a,0.67
+xCFCXzDUGjY_5_9,a man is sliding on a water,0.66
+He7Ge7Sogrk_47_70,a man is doing a,0.67
+tJHUH9tpqPg_113_118,a woman is pouring a,0.66
+n016q1w8Q30_2_11,a person is slicing a onion,0.68
+RjpbFlOHFps_8_25,the man is doing the wood,0.66
+6JnGBs88sL0_4_10,a man is on a,0.65
+EpMuCrbxE8A_107_115,a man is playing the guitar,0.67
+HAjwXjwN9-A_16_24,a man is a a,0.74
+4xVGpDmA4lE_23_33,a baby is playing a,0.68
+k5OKBX2e7xA_19_32,a man is riding a bicycle,0.66
+Jag7oTemldY_12_25,a man is speaking to the woods,0.67
+8MVo7fje_oE_125_130,a man is draining a container,0.67
+bqMmyY1ImkI_0_14,a person is bathing in a bowl,0.68
+jTnrm338_KY_34_42,a person is cutting some meat,0.67
+UdcObAQ5OOM_15_30,a man is doing a,0.67
+4PcL6-mjRNk_11_18,a man is being on a,0.67
+3qqEKTPxLNs_1_15,a baby is playing with a ball,0.67
+glrijRGnmc0_211_215,a man is eating a piece of pizza,0.71
+q7pOFn8s4zc_263_273,a man is playing a,0.69
+mtrCf667KDk_134_176,a man is peeling a piece of meat,0.68
+0lh_UWF9ZP4_62_69,a woman is mixing some food,0.72
+JntMAcTlOF0_50_70,a woman is walking down the woods,0.85
+7NNg0_n-bS8_21_30,a man is performing on a stage,0.77
+IhwPQL9dFYc_124_129,a woman is slicing some some,0.71
+BAf3LXFUaGs_28_38,a man is playing the guitar,0.69
+6q1dX6thX3E_286_295,a man is talking,0.71
+RZL9irxnhZ0_34_40,a man is cutting a paper,0.82
+WWf0Z6ak3Dg_5_15,a man is playing in a,0.68
+PeUHy0A1GF0_114_121,a woman is preparing some meat,0.75
+klteYv1Uv9A_27_33,a man is riding a bike,0.70
+e-j59PqJjSM_405_416,a man is mixing ingredients in a bowl,0.69
+778mkceE0UQ_40_46,a car is driving a car,0.71
+77iDIp40m9E_126_131,a man is riding a bike,0.70
+e-j59PqJjSM_50_98,a man is slicing a onion,0.70
+Dgf0VHMEtNs_57_66,a woman is putting on a large,0.71
+f9Won2JpOEU_60_80,a cat is playing with a,0.69
+dfOuTx66bJU_34_39,the man walked down the water,0.72
+04Gt01vatkk_248_265,a woman is slicing a,0.73
+rl1rVk_xIOs_1_16,a woman is playing,0.70
+v7iIZXtpIb8_5_15,a man is playing a,0.72
+DhwrBs96Kgk_120_124,a man is running on a,0.70
+qLwgb3F0aPU_298_305,a group of people are dancing,0.69
+qeKX-N1nKiM_0_5,a woman is seasoning some food,0.70
+1Sp2__RCT0c_11_15,two are being out,0.76
+Fe4tO5vW9_E_64_70,a woman is adding something into a bowl,0.80
+mmSQTI6gMNQ_120_128,two women are dancing,0.72
+HV12kTtdTT4_5_14,a man is playing a piano,0.77
+0lh_UWF9ZP4_27_31,a woman is slicing a vegetable,0.69
+Je3V7U5Ctj4_569_576,a man is spreading a tortilla,0.75
+30GeJHYoerk_121_126,a man is falling down,0.72
+04Gt01vatkk_308_321,a man is cutting a,0.71
+zulPFoY64wE_26_33,a man is riding a water,0.71
+MrQd1zUVRUM_103_110,a man is doing another another another,0.67
+xxHx6s_DbUo_216_222,a man is doing a bicycle,0.67
+71soiLO6I9U_15_24,a man is cooking,0.68
+UXs3eq68ZjE_250_255,a man is stirring rice in a pot,0.68
+jbzaMtPYtl8_48_58,a man is riding a on a,0.68
+8HB7ywgJuTg_131_142,a woman is mixing a,0.68
+Cjf21Y19aUQ_82_86,a man is talking,0.68
+qvg9eM4Hmzk_4_10,a man is lifting a truck,0.68
+5HAf_INrFy0_3_25,a dog is making a dance,0.68
+YmXCfQm0_CA_277_284,a man is shooting a tree,0.68
+88DOMJ11q2M_84_87,a woman is running on her,0.77
+NUYu9c9XsgY_7_21,a person is playing an,0.67
+N3A7944_UJw_63_70,a man is preparing a water,0.68
+uJPupV4oLZ0_4_12,a baby is holding a small,0.71
+cnsjm3fNEec_4_10,a man is playing a,0.71
+J_evFB7RIKA_104_120,a person is cutting a piece of pieces,0.70
+g1Gldu1KS44_8_14,a baby is walking in the ground,0.67
+s1ZABV7AQdA_38_48,a group of people are dancing,0.72
+tcxhOGyrCtI_15_21,a dog is playing with a puppy,0.80
+inzk2fTUe1w_1_15,a man is preparing a,0.76
+j2Dhf-xFUxU_13_20,a person is slicing a potato,0.77
+MTjrZthHwJQ_2_11,a person is on a large,0.76
+J---aiyznGQ_0_6,a man is playing a keyboard,0.78
+ZbtpcGi2DWY_161_170,a person is playing with a,0.72
+RSx5G0_xH48_12_17,a puppy is playing with a toy,0.76
+ecm9gf2Pgkc_1_24,a man is playing with a,0.69
+pW9DFPqoIsI_26_50,a man is peeling a egg,0.72
+N2Cm0SLr0ZE_18_29,a baby is playing a,0.79
+sJSmRik2c-c_1_7,a man is walking down,0.70
+zv2RIbUsnSw_335_341,a man is falling down a,0.82
+aM-RcQj0a7I_37_55,a person is cooking in,0.71
+TZ860P4iTaM_15_28,a cat is playing the piano,0.70
+lo4KcsBN--A_0_10,a person is on a,0.68
+u4T76jsPin0_0_11,a man is playing a,0.68
+7HcYJKMxpcg_20_28,a boy is playing a grass,0.69
+CGllPWAwmUo_1_15,a man is doing,0.69
+WTf5EgVY5uU_124_128,a woman is cooking something,0.67
