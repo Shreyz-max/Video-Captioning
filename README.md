@@ -8,35 +8,35 @@ Automated video caption generator helps searching of videos in websites better.
 It can be used for clustering of videos based on their content easier.
 
 ## Table of contents
-* [Inspiration](#Inspiration)
-* [Sample Results](#Sample-Results) 
-* [Dataset](#Dataset)
-* [Setup](#Setup)
-* [Usage](#Usage)
-* [Model](#Model)
-  * [Training Architecture](#Training-Architecture)
-  * [Inference Architecture](#Inference-Architecture)
-  * [Loss](#Loss)
-  * [Metric](#Metric)
-* [Features](#Features)
-* [Scripts](#Scripts)
-* [Future development](#Future-Development)
-* [References](#References)
+* <a href="#Inspiration">Inspiration</a>
+* <a href="#SampleResults">Sample Results</a>
+* <a href="#Dataset">Dataset</a>
+* <a href="#Setup">Setup</a>
+* <a href="#Usage">Usage</a>
+* <a href="#Model">Model</a>
+  * <a href="#TrainingArchitecture">Training Architecture</a>
+  * <a href="#InferenceArchitecture">Inference Architecture</a>
+  * <a href="#Loss">Loss</a>
+  * <a href="#Metric">Metric</a>
+* <a href="#Features">Features</a>
+* <a href="#Scripts">Scripts</a>
+* <a href="#FutureDevelopment">Future Development</a>
+* <a href="#References">References</a>
 
-## Inspiration
+<h2 id="Inspiration">Inspiration</h2>
 I was looking around for some new projects when I came across video captioning and I realised the lack of good resources. 
 I hope this project makes it easier for people to implement video captioning.
 
-## Sample Results
+<h2 id="SampleResults">Sample Results</h2>
 Here is a clip of realtime prediction on the testing data.
 <p align = "center"><img align = "center" src = "images/predict_realtime.gif" /></p>
 
-## Dataset
-This project is build on the [MSVD](https://drive.google.com/file/d/0B18IKlS3niGFNlBoaHJTY3NXUkE/view) dataset. 
+<h2 id="Dataset">Dataset</h2>
+This project is build on the <a href="https://drive.google.com/file/d/0B18IKlS3niGFNlBoaHJTY3NXUkE/view">MSVD</a> dataset. 
 It contains 1450 training videos and 100 testing videos.
 
-## Setup
-Clone the repository :`git clone https://github.com/Shreyz-max/Video-Captioning.git`
+<h2 id="Setup">Setup</h2>
+Clone the repository : `git clone https://github.com/Shreyz-max/Video-Captioning.git`
 
 Video Caption Generator: `cd Video-Captioning`
 
@@ -46,7 +46,7 @@ Activate environment: `conda activate video_caption`
 
 Install requirements: `pip install -r requirements.txt`
 
-## Usage
+<h2 id="Usage">Usage</h2>
 To use the models that have already been trained
 
 Add a video to **data/testing_data/video** folder and run the predict realtime file as `python predict_realtime.py`
@@ -57,38 +57,40 @@ To convert into features run the extract_features.py file as `python extract_fea
 
 Run train.py for local training or use the Video_Captioning.ipynb notebook 
 
-## Model
+<h2 id="Model">Model</h2>
 
-### Training Architecture
+<h3 id="TrainingArchitecture">Training Architecture</h3>
 
 <p align = "center"><img align = "center" src = "images/model_train.png" /></p>
 
-### Inference Architecture
+<h3 id="InferenceArchitecture">Inference Architecture</h3>
 
-#### Encoder Model
+<h3 id="EncoderModel">Encoder Model</h3>
 <p align = "center"><img align = "center" src = "images/model_inference_encoder.png" /></p>
 
-#### Decoder Model
+<h3 id="DecoderModel">Decoder Model</h3>
 <p align = "center"><img align = "center" src = "images/model_inference_decoder.png" /></p>
 
-#### Loss
+<h3 id="Loss">Loss</h3>
 This is the graph of epochs vs loss. The loss used is categorical crossentropy.
 <p align = "center"><img align = "center" src = "images/loss.png" /></p>
 
-#### Metric
+<h3 id="Metric">Metric</h3>
 This is the graph of epochs vs metric. The metric used is accuracy.
 <p align = "center"><img align = "center" src = "images/accuracy.png" /></p>
 
-## Features
- * Realtime implementation
- * Two types of search algorithms depending upon the requirements
- * Beam search and Greedy search
+<h2 id="Features">Features</h2>
+<ul>
+ <li> Realtime implementation</li>
+ <li> Two types of search algorithms depending upon the requirements</li>
+ <li> Beam search and Greedy search</li>
+ </ul>
  
 Greedy search selects the most likely word at each step in the output sequence.
 Beam search algorithm selects multiple alternatives for an input sequence at each timestep based on conditional probability.
-To get more information on these search algorithms check out this [post](https://machinelearningmastery.com/beam-search-decoder-natural-language-processing/) 
+To get more information on these search algorithms check out this <a href="https://machinelearningmastery.com/beam-search-decoder-natural-language-processing/">post</a> 
 
-### Performance of both algorithms on testing data
+<h3 id="Performance">Performance of both algorithms on testing data</h3>
 <table>
  <tr>
   <th>Video</th>
@@ -147,7 +149,8 @@ To get more information on these search algorithms check out this [post](https:/
  </tr>
  </table>
 
- ## Scripts
+ <h2 id="Scripts">Scripts</h2>
+ 
  * **train.py** contains the model architecture
  * **predict_test.py** is to check for predicted results and store them in a txt file along with the time taken for each prediction
  * **predict_realtime.py** checks the results in realtime
@@ -157,13 +160,15 @@ To get more information on these search algorithms check out this [post](https:/
     config.py contains all the configurations i am using
  * **Video_Captioning.ipynb** is the notebook i used for training and building this project.
 
-## Future Development
- * Adding attention blocks and pretrained embeddding like glove so that the model understands sentences better
- * Using other pretrained models to extract features specially ones made for understanding videos like I3D
- * Right now the model uses only 80 frames improvements need to be made so that it can work even for longer videos
- * Adding a UI to the project
- 
- ## References
+<h2 id="FutureDevelopment">Future Development</h2>
+<ul>
+ <li> Adding attention blocks and pretrained embeddding like glove so that the model understands sentences better</li> 
+ <li> Using other pretrained models to extract features specially ones made for understanding videos like I3D</li> 
+ <li> Right now the model uses only 80 frames improvements need to be made so that it can work even for longer videos</li>
+ <li> Adding a UI to the project</li>
+</ul>
+
+ <h2 id="References">References</h2>
  
  [SV2T paper 2015](https://arxiv.org/abs/1505.00487)
  
