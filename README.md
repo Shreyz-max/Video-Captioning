@@ -98,7 +98,7 @@ To get more information on these search algorithms check out this <a href="https
  <th>Greedy Text(Time taken)</th>
  </tr>
 <tr>
- <td><img src="images/qeKX-N1nKiM_0_5.gif" height="320px"/></td>
+ <td><img src="images/qeKX-N1nKiM_0_5.gif" width="320px"/></td>
  <td>a woman is seasoning some food(22.05s)</td>
 <td>a woman is seasoning some food(0.70s)</td>
  </tr>
