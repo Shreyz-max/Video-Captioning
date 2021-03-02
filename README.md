@@ -89,18 +89,63 @@ Beam search algorithm selects multiple alternatives for an input sequence at eac
 To get more information on these search algorithms check out this [post](https://machinelearningmastery.com/beam-search-decoder-natural-language-processing/) 
 
 ### Performance of both algorithms on testing data
-|Video|Beam Text(Time taken)|Greedy Text(Time taken)|
-|:-:|:-:|:-:|
-|<img src="images/qeKX-N1nKiM_0_5.gif" height="320px"/>|a woman is seasoning some food(22.05s)|a woman is seasoning some food(0.70s)|
-|<img src="images/7NNg0_n-bS8_21_30.gif" width="320px"/>|a man is singing (13.79s) |a man is performing on a stage(0.77s)|
-|<img src="images/shPymuahrsc_5_12.gif" width="320px"/>|the animal is sitting on the ground (21.16)|a person is playing(0.67s)|
-|<img src="images/k5OKBX2e7xA_19_32.gif" width="320px"/>|a man is riding a bicycle (22.20) |a man is riding a bicycle(0.66)|
-|<img src="images/Je3V7U5Ctj4_569_576.gif" width="320px"/>|a man is spreading a tortilla (25.65) |a man is spreading a tortilla (0.75)
-|<img src="images/0lh_UWF9ZP4_62_69.gif" width="320px"/>|a woman is mixing some food (35.91) |a woman is mixing some food(0.72)|
-|<img src="images/5HAf_INrFy0_3_25.gif" width="320px"/>|a dog is dancing (15.58) |a dog is making a dance(0.68)
-|<img src="images/J_evFB7RIKA_104_120.gif" width="320px"/>|a person is cutting a pineapple (24.31) |a person is cutting a piece of pieces(0.70)|
-|<img src="images/TZ860P4iTaM_15_28.gif" width="320px"/>|a cat is playing the piano (26.48) |a cat is playing the piano(0.70)|
-|<img src="images/ezgif-4-989de822710c.gif" width="320px"/>|a man is mixing ingredients in a bowl (38.16) |a man is mixing ingredients in a bowl(0.69)|
+<table>
+ <tr>
+  <th>Video</th>
+  <th>Beam Text(Time taken)</th>
+ <th>Greedy Text(Time taken)</th>
+ </tr>
+<tr>
+ <td><img src="images/qeKX-N1nKiM_0_5.gif" height="320px"/></td>
+ <td>a woman is seasoning some food(22.05s)</td>
+<td>a woman is seasoning some food(0.70s)</td>
+ </tr>
+ <tr>
+ <td><img src="images/7NNg0_n-bS8_21_30.gif" width="320px"/></td>
+ <td>a man is singing (13.79s)</td>
+<td>a man is performing on a stage(0.77s)</td>
+ </tr>
+ <tr>
+ <td><img src="images/shPymuahrsc_5_12.gif" width="320px"/></td>
+ <td>the animal is sitting on the ground (21.16)</td>
+<td>a person is playing(0.67s)</td>
+ </tr>
+ <tr>
+ <td><img src="images/k5OKBX2e7xA_19_32.gif" width="320px"/></td>
+ <td>a man is riding a bicycle (22.20)</td>
+<td>a man is riding a bicycle(0.66)</td>
+ </tr>
+ <tr>
+ <td><img src="images/Je3V7U5Ctj4_569_576.gif" width="320px"/></td>
+ <td>a man is spreading a tortilla (25.65)</td>
+<td>a man is spreading a tortilla (0.75)</td>
+ </tr>
+<tr>
+ <td><img src="images/0lh_UWF9ZP4_62_69.gif" width="320px"/></td>
+ <td>a woman is mixing some food (35.91)</td>
+<td>a woman is mixing some food(0.72)</td>
+ </tr>
+ <tr>
+ <td><img src="images/5HAf_INrFy0_3_25.gif" width="320px"/></td>
+ <td>a dog is dancing (15.58)</td>
+<td>a dog is making a dance(0.68)</td>
+ </tr>
+  <tr>
+ <td><img src="images/J_evFB7RIKA_104_120.gif" width="320px"/></td>
+ <td>a person is cutting a pineapple (24.31) </td>
+<td>a person is cutting a piece of pieces(0.70)</td>
+ </tr>
+ <tr>
+ <td><img src="images/TZ860P4iTaM_15_28.gif" width="320px"/></td>
+ <td>a cat is playing the piano (26.48) </td>
+<td>a cat is playing the piano(0.70)</td>
+ </tr>
+ <tr>
+ <td><img src="images/ezgif-4-989de822710c.gif" width="320px"/></td>
+ <td>a man is mixing ingredients in a bowl (38.16) </td>
+<td>a man is mixing ingredients in a bowl(0.69)</td>
+ </tr>
+ </table>
 
  ## Scripts
  * **train.py** contains the model architecture
