@@ -36,24 +36,24 @@ This project is build on the <a href="https://drive.google.com/file/d/0B18IKlS3n
 It contains 1450 training videos and 100 testing videos.
 
 <h2 id="Setup">Setup</h2>
-Clone the repository : `git clone https://github.com/Shreyz-max/Video-Captioning.git`
+Clone the repository : <code>git clone https://github.com/Shreyz-max/Video-Captioning.git</code>
 
-Video Caption Generator: `cd Video-Captioning`
+Video Caption Generator: <code>cd Video-Captioning</code>
 
-Create environment: `conda create -n video_caption python=3.7`
+Create environment: <code>conda create -n video_caption python=3.7</code>
 
-Activate environment: `conda activate video_caption`
+Activate environment: <code>conda activate video_caption</code>
 
-Install requirements: `pip install -r requirements.txt`
+Install requirements: <code>pip install -r requirements.txt</code>
 
 <h2 id="Usage">Usage</h2>
 To use the models that have already been trained
 
-Add a video to **data/testing_data/video** folder and run the predict realtime file as `python predict_realtime.py`
+Add a video to **data/testing_data/video** folder and run the predict realtime file as <code>python predict_realtime.py</code>
 
 For faster results extract the features of the video and save it in feat folder of the testing_data.
 
-To convert into features run the extract_features.py file as `python extract_features.py`
+To convert into features run the extract_features.py file as <code>python extract_features.py</code>
 
 Run train.py for local training or use the Video_Captioning.ipynb notebook 
 
@@ -109,43 +109,43 @@ To get more information on these search algorithms check out this <a href="https
  </tr>
  <tr>
  <td><img src="images/shPymuahrsc_5_12.gif" width="320px"/></td>
- <td>the animal is sitting on the ground (21.16)</td>
+ <td>the animal is sitting on the ground (21.16s)</td>
 <td>a person is playing(0.67s)</td>
  </tr>
  <tr>
  <td><img src="images/k5OKBX2e7xA_19_32.gif" width="320px"/></td>
- <td>a man is riding a bicycle (22.20)</td>
-<td>a man is riding a bicycle(0.66)</td>
+ <td>a man is riding a bicycle (22.20s)</td>
+<td>a man is riding a bicycle(0.66s)</td>
  </tr>
  <tr>
  <td><img src="images/Je3V7U5Ctj4_569_576.gif" width="320px"/></td>
- <td>a man is spreading a tortilla (25.65)</td>
-<td>a man is spreading a tortilla (0.75)</td>
+ <td>a man is spreading a tortilla (25.65s)</td>
+<td>a man is spreading a tortilla (0.75s)</td>
  </tr>
 <tr>
  <td><img src="images/0lh_UWF9ZP4_62_69.gif" width="320px"/></td>
- <td>a woman is mixing some food (35.91)</td>
-<td>a woman is mixing some food(0.72)</td>
+ <td>a woman is mixing some food (35.91s)</td>
+<td>a woman is mixing some food(0.72s)</td>
  </tr>
  <tr>
  <td><img src="images/5HAf_INrFy0_3_25.gif" width="320px"/></td>
- <td>a dog is dancing (15.58)</td>
-<td>a dog is making a dance(0.68)</td>
+ <td>a dog is dancing (15.58s)</td>
+<td>a dog is making a dance(0.68s)</td>
  </tr>
   <tr>
  <td><img src="images/J_evFB7RIKA_104_120.gif" width="320px"/></td>
- <td>a person is cutting a pineapple (24.31) </td>
-<td>a person is cutting a piece of pieces(0.70)</td>
+ <td>a person is cutting a pineapple (24.31s) </td>
+<td>a person is cutting a piece of pieces(0.70s)</td>
  </tr>
  <tr>
  <td><img src="images/TZ860P4iTaM_15_28.gif" width="320px"/></td>
- <td>a cat is playing the piano (26.48) </td>
-<td>a cat is playing the piano(0.70)</td>
+ <td>a cat is playing the piano (26.48s) </td>
+<td>a cat is playing the piano(0.70s)</td>
  </tr>
  <tr>
  <td><img src="images/ezgif-4-989de822710c.gif" width="320px"/></td>
- <td>a man is mixing ingredients in a bowl (38.16) </td>
-<td>a man is mixing ingredients in a bowl(0.69)</td>
+ <td>a man is mixing ingredients in a bowl (38.16s) </td>
+<td>a man is mixing ingredients in a bowl(0.69s)</td>
  </tr>
  </table>
 
