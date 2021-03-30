@@ -6,7 +6,7 @@ It takes a video as input and generates a caption describing the event in the vi
 The importance of captioning lies in its ability to make video more accessible in numerous ways. 
 Automated video caption generator helps searching of videos in websites better. 
 It can be used for clustering of videos based on their content easier.
-This is a brief overview of my project. To understand the project in details check out my medium <a href="https://shreya030200gupta.medium.com/video-captioning-with-keras-511984a2cfff">post</a>
+This is a brief overview of my project. To understand the project in details check out my medium <a href="https://medium.com/analytics-vidhya/video-captioning-with-keras-511984a2cfff">post</a>. I also did a <a href="https://youtu.be/DJEnkhKPbxA">live session</a> on this you can check that as well.
 
 ## Table of contents
 * <a href="#Inspiration">Inspiration</a>
