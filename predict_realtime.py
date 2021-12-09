@@ -167,6 +167,7 @@ class VideoDescriptionRealTime(object):
     def get_test_data(self):
         # loads the features array
         file_list = os.listdir(os.path.join(self.test_path, 'video'))
+        file_list.remove('.ipynb_checkpoints')
         # with open(os.path.join(self.test_path, 'testing.txt')) as testing_file:
             # lines = testing_file.readlines()
         # file_name = lines[self.num].strip()
