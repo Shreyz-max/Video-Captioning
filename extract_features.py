@@ -82,9 +82,14 @@ def extract_feats_pretrained_cnn():
         os.mkdir(os.path.join(config.test_path, 'feat'))
 
     video_list = os.listdir(os.path.join(config.test_path, 'video'))
+    
+    #ًWhen running the script on Colab an item called '.ipynb_checkpoints' 
+    #is added to the beginning of the list causing errors later on, so the next line removes it.
+    video_list.remove('.ipynb_checkpoints')
+    
     for video in video_list:
 
-        outfile = os.path.join(config.test_path, 'features_dir', video.split(".")[0] + '.npy')
+        outfile = os.path.join(config.test_path, 'feat', video + '.npy')
         img_feats = extract_features(video, model)
         np.save(outfile, img_feats)
 
