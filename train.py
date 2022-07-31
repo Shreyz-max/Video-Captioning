@@ -32,13 +32,9 @@ class VideoDescriptionTrain(object):
         self.num_decoder_tokens = config.num_decoder_tokens
         self.time_steps_encoder = config.time_steps_encoder
         self.time_steps_decoder = None
-        self.train_list = []
         self.x_data = {}
 
         # processed data
-        self.encoder_input_data = []
-        self.decoder_input_data = []
-        self.decoder_target_data = []
         self.tokenizer = None
 
         # models
@@ -122,15 +118,15 @@ class VideoDescriptionTrain(object):
         an encoder decoder sequence to sequence model
         reference : https://arxiv.org/abs/1505.00487
         """
-        encoder_inputs = Input(shape=(self.time_steps_encoder, self.num_encoder_tokens), name="encoder_inputs")
-        encoder = LSTM(self.latent_dim, return_state=True, return_sequences=True, name='encoder_lstm')
+        encoder_inputs = Input(shape=(config.time_steps_encoder, config.num_encoder_tokens), name="encoder_inputs")
+        encoder = LSTM(config.latent_dim, return_state=True, return_sequences=True, name='encoder_lstm')
         _, state_h, state_c = encoder(encoder_inputs)
         encoder_states = [state_h, state_c]
 
-        decoder_inputs = Input(shape=(self.time_steps_decoder, self.num_decoder_tokens), name="decoder_inputs")
-        decoder_lstm = LSTM(self.latent_dim, return_sequences=True, return_state=True, name='decoder_lstm')
+        decoder_inputs = Input(shape=(config.time_steps_decoder, config.num_decoder_tokens), name="decoder_inputs")
+        decoder_lstm = LSTM(config.latent_dim, return_sequences=True, return_state=True, name='decoder_lstm')
         decoder_outputs, _, _ = decoder_lstm(decoder_inputs, initial_state=encoder_states)
-        decoder_dense = Dense(self.num_decoder_tokens, activation='relu', name='decoder_relu')
+        decoder_dense = Dense(config.num_decoder_tokens, activation='relu', name='decoder_relu')
         decoder_outputs = decoder_dense(decoder_outputs)
 
         model = Model([encoder_inputs, decoder_inputs], decoder_outputs)

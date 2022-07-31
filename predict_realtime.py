@@ -4,13 +4,11 @@ import os
 import cv2
 import time
 
-import joblib
 import numpy as np
-from keras.layers import Input, LSTM, Dense
-from keras.models import Model, load_model
 import extract_features
 
 import config
+import model
 
 
 class VideoDescriptionRealTime(object):
@@ -25,48 +23,21 @@ class VideoDescriptionRealTime(object):
         self.max_probability = config.max_probability
 
         # models
-        self.encoder_model = None
-        self.decoder_model = None
-        self.inf_encoder_model = None
+        self.tokenizer, self.inf_encoder_model, self.inf_decoder_model = model.inference_model()
         self.inf_decoder_model = None
         self.save_model_path = config.save_model_path
         self.test_path = config.test_path
         self.search_type = config.search_type
-        self.tokenizer = None
         self.num = 0
 
-    def load_inference_models(self):
-        # load tokenizer
-
-        with open(os.path.join(self.save_model_path, 'tokenizer' + str(self.num_decoder_tokens)), 'rb') as file:
-            self.tokenizer = joblib.load(file)
-
-        # inference encoder model
-        self.inf_encoder_model = load_model(os.path.join(self.save_model_path, 'encoder_model.h5'))
-
-        # inference decoder model
-        decoder_inputs = Input(shape=(None, self.num_decoder_tokens))
-        decoder_dense = Dense(self.num_decoder_tokens, activation='softmax')
-        decoder_lstm = LSTM(self.latent_dim, return_sequences=True, return_state=True)
-        decoder_state_input_h = Input(shape=(self.latent_dim,))
-        decoder_state_input_c = Input(shape=(self.latent_dim,))
-        decoder_states_inputs = [decoder_state_input_h, decoder_state_input_c]
-        decoder_outputs, state_h, state_c = decoder_lstm(decoder_inputs, initial_state=decoder_states_inputs)
-        decoder_states = [state_h, state_c]
-        decoder_outputs = decoder_dense(decoder_outputs)
-        self.inf_decoder_model = Model(
-            [decoder_inputs] + decoder_states_inputs,
-            [decoder_outputs] + decoder_states)
-        self.inf_decoder_model.load_weights(os.path.join(self.save_model_path, 'decoder_model_weights.h5'))
-
-    def greedy_search(self, f):
+    def greedy_search(self, loaded_array):
         """
 
         :param f: the loaded numpy array after creating videos to frames and extracting features
         :return: the final sentence which has been predicted greedily
         """
         inv_map = self.index_to_word()
-        states_value = self.inf_encoder_model.predict(f.reshape(-1, 80, 4096))
+        states_value = self.inf_encoder_model.predict(loaded_array.reshape(-1, 80, 4096))
         target_seq = np.zeros((1, 1, 1500))
         final_sentence = ''
         target_seq[0, 0, self.tokenizer.word_index['bos']] = 1
@@ -237,7 +208,6 @@ class VideoDescriptionRealTime(object):
 
 if __name__ == "__main__":
     video_to_text = VideoDescriptionRealTime(config)
-    video_to_text.load_inference_models()
     while True:
         print('.........................\nGenerating Caption:\n')
         start = time.time()
