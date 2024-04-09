@@ -24,7 +24,6 @@ class VideoDescriptionRealTime(object):
 
         # models
         self.tokenizer, self.inf_encoder_model, self.inf_decoder_model = model.inference_model()
-        self.inf_decoder_model = None
         self.save_model_path = config.save_model_path
         self.test_path = config.test_path
         self.search_type = config.search_type
@@ -220,6 +219,10 @@ if __name__ == "__main__":
             print('\n.........................\n')
             print(sentence)
         print('\n.........................\n')
+        
+        with open('output.txt', 'w') as output_file:  # Changed variable name to output_file for clarity
+            output_file.write(sentence)
+
         print('It took {:.2f} seconds to generate caption'.format(end-start))
         video_to_text.main(file, sentence)
         play_video = input('Should I play the video? ')
